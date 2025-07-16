@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+:root{
+    --var1: "Roboto", sans-serif;
+    --var2: "Montserrat", sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body,html{
+    width: 100%;
+    height: 100vh;
+}
+body{
+    background: black url("../imagens/nasa.jpeg") no-repeat fixed ;
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    background-color: rgba(0, 0, 0, 0.414);
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+header{
+    height: 43px;
+    background-color:rgba(0, 0, 0, 0.414);
+}
+header p{
+    padding: 5px;
+    margin: 15px;
+}
+header div{
+    margin: auto;
+    width: 90%;
+}
+ p ,h1,a { 
+    font-family: var(--var2);
+    font-size: 1.3em 
+ }
+#info1{
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.846);
+    display: none;
+    padding: 8px;
+    overflow: auto; 
+    width: 80%;
+    border: 0.2px solid rgba(172, 104, 9, 0.209) ;
+}
+#info2{ 
+    backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px); 
+    background-color: rgba(155, 155, 165, 0.011);
+    border: 3px solid rgba(255, 255, 255, 0.174);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 70%;
+    min-width: 300px;
+    text-align: center;
+}
+#info2 h1{
+    letter-spacing: 0.05em;
+    font-size: 1.4em;
+    margin: 1em;
+    text-shadow: 2px -2px 6px rgba(0, 0, 0, 0.32);
+}
+#info2 p{
+    display: inline-block;
+    text-shadow: 2px -2px 6px black;
+}
+#info1 p{
+    margin: 2% 0px 1px 3%;
+    text-indent: 1em;
+    letter-spacing: 0.1em;
+    font-family: var(--var1);
+    font-size: 1.1em;
+}
+#info1 img{
+    width: 46%;
+    float: right;
+    margin: 1% 4% 1px 10px ;
+    min-width: 310px;
+}
+.b1{
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 4% 4%;   
+}
+input[type = date]{
+    background-color: transparent;
+    color: white;
+    margin-right: 3px;
+    padding: 6px;
+    font-size: 1.2em;
+    min-width: 160px;
+    text-align: center;
+}
+input[type = date],button{
+    border-radius: 10px;
+    font-family: var(--var1);
+    margin-top: 10px;
+}
+button{
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    padding: 1px;
+    color: white;
+    width: 17%;
+    min-width: 160px;
+    background-color: rgba(255, 255, 255, 0.082);
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.353);
+} 
+h2{
+    font-size: 1.1em;
+    font-family: var(--var1);
+}
+footer p{
+    font-family: var(--var1);
+    font-size: 1em;
+}
+#d1{
+    width: 90%;
+    margin: auto;
+    padding: 5px 0px;
+}
+@media(max-width:600px){  
+ p,a{
+    font-size: 1em;
+ }
+ #info2 h1{
+    font-size: 1.2em;
+ }
+ #info{
+    margin: 20% auto;
+ }
+ #info2{
+    margin: 40% auto
+ }
+}
