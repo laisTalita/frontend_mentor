@@ -1,0 +1,80 @@
+#game_screen{
+    background-image: url("../../public/images/rules/bg-pentagon.svg");
+    width: 70%;
+    max-width: 350px;
+    height: 22em;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+#game_screen button img{
+    width: 40%;
+}
+#game_screen button{
+    position: absolute;
+    border: none;
+    width: 93px;
+    height: 93px;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+}
+#game_screen button:hover img{
+    transform: scale(1.1);
+}
+
+#game_screen button:nth-child(1){ 
+    bottom: -3em; left: 4em; transform: translate(-50%, -50%); 
+}
+#game_screen button:nth-child(2) { 
+     top: 11em; right: 1em; transform: translate(50%, -50%); 
+}
+#game_screen button:nth-child(3) { 
+    bottom: 4em; right: -3em; transform: translate(-50%, 50%); 
+}
+#game_screen button:nth-child(4) { 
+top: 3em; left: 50%; transform: translate(-50%, -50%); 
+}
+
+#game_screen button:nth-child(5) { 
+    top: 11em; left: 1em; transform: translate(-50%, -50%); 
+}
+
+@media (min-width: 924px) {
+    #game_screen{
+    max-width: 360px;
+    height: 26em;
+    margin-top: 5em;
+
+    }
+    #game_screen button:nth-child(1){ 
+    bottom: -8em; left: 4em; transform: translate(-50%, -50%); 
+    }
+    #game_screen button:nth-child(2) { 
+     top: 12em; right: -1em; transform: translate(50%, -50%); 
+}
+    #game_screen button:nth-child(3) { 
+    bottom:3em; right: -7em; transform: translate(-50%, 50%); 
+}
+#game_screen button:nth-child(4) { 
+top: 1em; left: 50%; transform: translate(-50%, -50%); 
+}
+#game_screen button:nth-child(5) { 
+    top: 12em; left: -1em; transform: translate(-50%, -50%); 
+}
+
+#game_screen button img{
+    width: 44%;
+}
+#game_screen button{
+    width: 145px;
+    height: 145px;
+  
+}
+  
+}
