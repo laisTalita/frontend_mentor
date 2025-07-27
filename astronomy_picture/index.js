@@ -10,6 +10,7 @@ app.use(express.static('public'));
 
 
 app.get('/api/apod', async (req, res) => {
+  
   const date = req.query.date; 
   
   if (!date) {
@@ -18,6 +19,7 @@ app.get('/api/apod', async (req, res) => {
 
   try {
     const response = await fetch(`https://api.nasa.gov/planetary/apod?date=${date}&api_key=${process.env.NASA_API_KEY}`);
+
     if (!response.ok) {
       return res.status(response.status).json({ error: 'Erro ao buscar dados da NASA' });
     }
