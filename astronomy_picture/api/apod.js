@@ -1,3 +1,4 @@
+import fetch from 'node-fetch';
 export default async function handler(req, res) {
   const  date  = req.query.date;
   const apiKey = process.env.NASA_API_KEY; 
