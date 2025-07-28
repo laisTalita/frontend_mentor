@@ -1,8 +1,9 @@
 .result_screen {
     margin: auto;
-    position: relative;
-    margin-bottom: 0em;
-    margin-top: 2em;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     width: 100%;
     max-width: 500px;
     height: auto;
@@ -199,12 +200,12 @@
     0%, 100% {
         box-shadow: 0 0 0 4em  rgba(249, 248, 248, 0.032),
                     0 0 0 9em rgba(252, 239, 247, 0.032),
-                    0 0 0 14em rgba(252, 239, 247, 0.032);
+                    0 0 0 15em rgba(252, 239, 247, 0.032);
     }
     50% {
         box-shadow: 0 0 0 4em rgba(249, 248, 248, 0.040),
                     0 0 0 9em rgba(249, 248, 248, 0.040),
-                    0 0 0 14em rgba(252, 239, 247, 0.100);
+                    0 0 0 15em rgba(252, 239, 247, 0.100);
     }
 }
   
