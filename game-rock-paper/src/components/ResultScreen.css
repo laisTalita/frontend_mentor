@@ -1,0 +1,212 @@
+.result_screen {
+    margin: auto;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    flex-wrap: wrap;    
+}
+.result_screen, .picked,.div_circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result_screen p{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.95);
+}
+.picked{
+    width: 50%;
+    height: 12em;
+    padding: 5px 0px;
+    gap: 1em;
+    flex-direction: column;
+    position: relative;
+}
+.result{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    max-width: 270px;
+    height: auto;
+    gap: 2em;
+    margin: 3em 0em;
+    text-align: center;
+}
+#play_again{
+    margin-top: 1em;
+    border: none;
+    box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.157);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.491);
+    cursor: pointer;
+    height: 43px;
+    width: 90%;
+    font-size: 0.9em;
+    max-width: 220px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    border-radius: 7px;
+    color: var(--Dark);
+}
+.picked p{
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.863);
+    margin: 0.6em 0em;
+    letter-spacing: 0.1em;
+}
+
+.div_circle{
+    flex: 1;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.097);
+    border-radius: 50%;
+}
+.picked button {
+    width: 120px;
+    height: 120px;
+    border: none;
+    border-radius: 50%;
+    padding: 2px;
+    cursor: default;
+}
+.picked button img {
+    width: 35%;
+}
+#result_p{
+    text-transform: uppercase;
+    font-size: 3.5em;
+    color: rgba(255, 255, 255, 0.899);
+}
+.win {
+  animation: glowPulse 2s infinite ease-in-out;
+ animation-delay: 1.3s;
+}
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 0em 1.1em rgba(249, 248, 248, 0.032),
+                0 0 0em 3.3em rgba(252, 239, 247, 0.032),
+                0 0 0em 6em rgba(252, 239, 247, 0.032);
+  }
+  50% {
+    box-shadow: 0 0 0em 1.1em rgba(249, 248, 248, 0.040),
+                0 0 0em 3.3em rgba(249, 248, 248, 0.040),
+                0 0 0em 6em rgba(252, 239, 247, 0.100);
+  }
+}
+@media (min-width:362px) {
+    .result_screen button {
+    width: 130px;
+    height: 130px;}
+}
+@media (min-width:577px){
+    .picked button {
+        width: 140px;
+        height: 140px;
+    }
+}
+@media(min-width:768px){
+     .result_screen{
+        width: 60%;
+       max-width: none;
+
+     }
+      .result_screen button{
+        width: 180px;
+        height: 180px;
+    }
+    .picked{
+        width: 50%;
+        height: 18em;
+        flex-direction: column-reverse;
+    }
+    @keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 0em 2em  rgba(249, 248, 248, 0.032),
+                0 0 0em 4em rgba(252, 239, 247, 0.032),
+                0 0 0em 8em rgba(252, 239, 247, 0.032);
+  }
+  50% {
+    box-shadow: 0 0 0em 2em rgba(249, 248, 248, 0.040),
+                0 0 0em 4em rgba(249, 248, 248, 0.040),
+                0 0 0em 8em rgba(252, 239, 247, 0.100);
+  }
+}
+}
+
+@media (min-width: 1024px) {
+
+    .result_screen{
+        margin-top: 2em;
+    }
+    .picked{
+        width: 50%;
+        height: 21em;
+    }
+    .result_screen button img{
+        width: 30%;
+    }
+    .circle{
+        width: 200px;
+        height: 200px;
+    }
+    .result_screen button{
+        width: 240px;
+        height: 240px;
+    }
+     .picked p{
+        margin-bottom: 1.7em;
+        letter-spacing: 0.2em;
+        font-size: 1.4em
+    }
+  
+}
+@media (min-width: 1300px) {
+     .result_screen{
+        width: 100%;
+        flex-wrap: nowrap;
+     }
+     .result{
+        order: 2; 
+        margin-top: 7em;
+    }
+     .picked{
+        width: 25%;
+        height: 24em;
+    }
+    #pick_player{
+        order: 1;
+    }
+    #pick_house{
+        order: 3;
+    }
+      .result_screen button img{
+        width: 30%;
+    }
+    .result_screen button{
+        width: 290px;
+        height: 290px;
+    }
+      .circle{
+        width: 230px;
+        height: 230px;
+    }
+    @keyframes glowPulse {
+    0%, 100% {
+        box-shadow: 0 0 0 4em  rgba(249, 248, 248, 0.032),
+                    0 0 0 9em rgba(252, 239, 247, 0.032),
+                    0 0 0 15em rgba(252, 239, 247, 0.032);
+    }
+    50% {
+        box-shadow: 0 0 0 4em rgba(249, 248, 248, 0.040),
+                    0 0 0 9em rgba(249, 248, 248, 0.040),
+                    0 0 0 15em rgba(252, 239, 247, 0.100);
+    }
+}
+  
+}
