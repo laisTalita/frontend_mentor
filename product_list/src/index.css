@@ -43,3 +43,15 @@ body{
 .button_confirm:hover{
   background-color: hsl(15, 86%, 33%);
 }
+
+footer{
+  padding: 10px;
+  text-align: center;
+  margin-top: 0.9em;
+
+}
+footer p a{
+ color: var(--Green);
+ font-weight: 600;
+ text-decoration: none;
+}

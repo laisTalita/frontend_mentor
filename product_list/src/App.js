@@ -40,7 +40,7 @@ function App(){
   }
 
   return (
-    <main className="App">
+    <><main className="App">
       <section className='app_sec'>
         <h1>Desserts</h1>
         <div className='container-grid'>
@@ -61,6 +61,14 @@ function App(){
        ):(<></>)
       }
     </main>
+    <footer>
+      <p>
+        Challenge by  
+        <a href="https://www.frontendmentor.io/profile/laisTalita" target='_blank'> Frontend Mentor</a>. Coded by 
+        <a href="https://github.com/laisTalita" target='_blank'> Lais Talita</a>.
+        </p>
+      </footer> 
+    </>
   );
 }
 
