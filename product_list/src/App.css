@@ -1,0 +1,62 @@
+.App{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 1em 0em;
+    justify-content: space-evenly;
+}
+.App h1{
+    color: var(--Rose_900);
+    letter-spacing: 0.02em;
+    margin-bottom: 0.8em;
+    font-size: 2.5em;
+}
+.aside_app{
+    margin-top: 0.6em;
+    margin-bottom: 0.4em;
+    width: 100%;
+    max-width: 460px;
+    align-self: start;
+    padding: 1.4em;
+    background-color: white;
+    border-radius: 10px;
+}
+.container-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0em 1em;
+    justify-items:center;
+}
+.app_sec{
+    width: 100%;
+}
+@media (min-width: 700px){
+    .container-grid{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .app_sec{
+        width: 100%;
+    }
+}
+@media (min-width: 1119px){
+    .container-grid{
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .app_sec{
+      width: 100%;
+    }
+}
+@media (min-width: 1390px){
+    .app_sec{
+      width: 65%;
+    }
+    .aside_app{
+      width: 27%;
+    }
+}
+@media (min-width:1800px) {
+
+}

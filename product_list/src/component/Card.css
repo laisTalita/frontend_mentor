@@ -1,0 +1,71 @@
+.itens{
+    margin: 1.5em 0em;
+    width: 100%;
+    max-width: 340px;
+}
+.itens_normal{
+    border: 1px solid transparent;
+}
+.itens_border{
+    border-radius: 8px;
+    border: 0.02em solid var(--Red);
+    box-shadow: 0px 0px 9px 2px hsla(14, 86%, 42%, 0.693);
+}
+.itens section{
+    width: 100%;
+    position: relative;
+}
+.itens > section > img{
+    border-radius: 8px;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.681);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.03);
+}
+.botao_itens{
+    padding: 0.8em 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 0.5em;
+    position: absolute;
+    font-size: 0.9em;
+    background-color: var(--Rose_50);
+    border: 1px solid var(--Rose_400);
+    width: 49%;
+    border-radius: 2em;
+    min-width: 130px;
+    z-index: 4;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.botao_itens:hover{
+    border: 1px solid var(--Red);
+    box-shadow: 0px 0px 3px var(--Red);
+}
+.sec_text{
+    margin-top: 1.9em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+.category{
+    color: var(--Rose_500);
+    font-size: 0.95em;
+}
+.name{
+    font-size: 1.02em;
+    font-weight:600;
+}
+.price{
+    color: var(--Red);
+    font-weight: 600;
+}
+
+@media(min-width : 1400px){
+    .itens{
+        margin-top: 0.1em;
+    }
+}

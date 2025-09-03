@@ -1,0 +1,133 @@
+.div_relative{
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.307);
+    z-index: 100;
+}
+.img_confirme{
+    margin-bottom: 1.2em;
+}
+#confirme_order{
+    width: 100%;
+    max-width: 430px;
+    padding: 1.5em 1.3em;
+    height: auto;
+    max-height: 90vh;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    bottom:0%;
+    transform: translate(-50%,0%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    justify-content: space-evenly;
+    background-color: rgb(244, 242, 242);
+}
+.img_confirm{
+    width: 58px;
+    align-self: stretch;
+    border-radius: 5px;
+}
+#confirme_order h2{
+    font-size: 2.5em;
+}
+.confirm_p{
+    color: var(--Rose_500);
+    margin: 0.5em 0em;
+}
+.order_final{
+    background-color: var(--Rose_100);
+    border-radius: 10px;
+    padding: 1em;
+    width: 100%;
+    margin-top: 1.5em;
+     max-height: 60vh;
+    overflow-y: scroll;
+}
+.princ{
+    padding: 0.7em 0.3em;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.054);
+}
+.order_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.two{
+    gap: 0.7em;
+    margin: 0.6em 0em;
+    overflow-x: scroll;
+}
+.flex_row{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.1em;
+}
+.div_princial{
+    display: flex;
+    flex-direction:column;
+    gap: 0.7em;
+}
+.div_princial >p{
+    font-weight: 600;
+    font-size: 0.9em;
+    white-space:nowrap;
+}
+.flex_row span{
+    color: var(--Red);
+    font-weight: 600;
+}
+.flex_row p{
+    color: var(--Rose_500);
+}
+.final_quant{
+    font-weight: 600;
+}
+.order_total_confirmed{
+    margin: 2em 0.2em 0.7em 0.2em;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.order_total_confirmed span{
+    font-weight: 600;
+    font-size: 1.7em;
+}
+
+@media(min-width :784px){
+    #confirme_order{
+    max-width: 540px;
+    height: 640px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+    .div_princial >p {
+    font-size: 1em;
+    }
+    .img_confirm{
+    width: 70px;
+    }
+    .final_quant{
+     font-size: 1em;
+    }    
+
+ 
+}
+@media(min-width:1900px){
+    #confirme_order{
+    max-width: 600px;
+    height: 640px;
+    }
+    .div_princial >p{
+    font-size: 1.1em;
+    }
+   .img_confirm{
+    width: 80px;
+   }
+}

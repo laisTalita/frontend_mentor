@@ -1,0 +1,37 @@
+.Controler_Buttons{
+    background-color: var(--Red);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    width: 49%;
+    border-radius: 2em;
+    min-width: 130px;
+    padding: 0.8em 0.7em;
+    border: 1px solid rgba(248, 244, 244, 0.632);
+    cursor: pointer;
+}
+
+.Controler_Buttons .bots:hover{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.Controler_Buttons .bots:hover img{
+    filter: invert(12%) sepia(100%) saturate(900%) hue-rotate(-20deg) brightness(0.8);
+}
+.Controler_Buttons .bots{
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 15px;
+    height: 15px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}

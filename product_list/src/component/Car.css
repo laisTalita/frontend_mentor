@@ -1,0 +1,54 @@
+.items-add{
+    justify-content: space-between;
+    font-size: 0.9em;
+    padding: 1.3em 0em;
+    border-bottom: 2px solid var(--Rose_100);
+}
+.items-add ,.container-flex{
+    display: flex;
+    gap:1.3em;
+    align-items: center;
+}
+.container_itens{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;;
+}
+.container-flex{
+    justify-content: flex-start;
+    font-size: 1em;
+}
+.remove_button{
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid var(--Rose_300);
+    cursor: pointer;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+}
+.remove_button img{
+    width: 0.9em;
+}
+.x_quant{
+    color: var(--Red);
+    font-weight: 600;
+    margin-right: 0.4em;
+}
+.remove_button:hover img{
+    filter: grayscale(100%) brightness(0.5);
+}
+.remove_button:hover{
+    border: 2px solid var(--Rose_900);
+
+}
+.item_price{
+    color: var(--Rose_500);
+}
+.item_total{
+    font-weight:600;
+}
+.item_name{
+    font-weight: 600;
+}
+
