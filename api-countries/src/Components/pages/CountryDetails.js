@@ -2,7 +2,6 @@ import {useParams ,Link} from "react-router-dom"
 import styles from './CountryDetails.module.css'
 import { GoArrowLeft } from "react-icons/go";
 import { PiCursorClickThin } from "react-icons/pi";import { useEffect, useState } from "react";
-import { ImGift } from "react-icons/im";
 
 function CountryDetails() {
     const {code} = useParams()

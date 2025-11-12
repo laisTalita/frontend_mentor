@@ -4,7 +4,6 @@ import style from './Home.module.css'
 import Options from "../form_components/Options";
 import Card from "../body_components/Card";
 import cardStyle  from '../body_components/Card.module.css'
-import { Link } from "react-router-dom";
 
 
 function Home() {
