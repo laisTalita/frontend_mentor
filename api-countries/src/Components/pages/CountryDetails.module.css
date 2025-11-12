@@ -1,0 +1,216 @@
+.container{
+    width: 86%;
+    margin: auto;
+    margin-top: 2em;
+    padding: 0.5em 0em;
+}
+.container_back{
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.4em 1.4em;
+    text-decoration: none;
+    color: var(--Grey_950);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.134);
+    background-color: var(--White);
+    cursor: pointer;
+    border-radius: 5px;
+    max-width: 105px;
+    margin-bottom: 4em;
+}
+.container_back:hover{
+    transform: scale(1.06);
+}
+.container_back span{
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+.containerItem img {
+  height: 230px;
+  max-width: 450px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: auto;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.254);
+  box-shadow: 1px 3px 6px 2px rgba(0, 0, 0, 0.215);
+  background-color: var(--White);
+}
+.containerItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+.about h2{
+    font-size: 1.34em;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.9em;
+    gap: 1.4em;
+}
+.teste{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3em;
+}
+.divContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+.divContainer  p{
+    font-size: 0.9em;
+}
+.divContainer span{
+    font-size: 1em;
+}
+.span_div{
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    width: 100%;
+    max-width: 260px;
+    overflow-x: scroll;
+    text-wrap: nowrap;
+}
+.sec{
+    margin-top: 2.3em;
+    position: relative;
+}
+
+.cursor{
+  position: absolute;
+  top: 15px;
+  right: 0;
+  font-size: 1.3em;
+  color: var(--Grey_400);
+  opacity: 0.4;
+  animation: clickPulse 1.6s ease-in-out infinite;
+}
+@keyframes clickPulse{ 
+  0%{ transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.7; }
+}
+.borders, .sec{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.borders{
+    align-items: center;
+    gap: 0.7em;
+    padding-top: 0.3em;
+    padding: 0.5em;
+    max-height: 95px;
+    box-shadow: inset 2px 1px 5px rgba(0, 0, 0, 0.092);
+    overflow: scroll;
+}
+.borders > .link{
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.174);
+    padding: 0.3em 2em;
+    background-color: var(--White);
+    cursor: pointer;
+    color: var(--Blue_900);
+    text-decoration: none;
+    border-radius: 4px;
+}
+.borders>.link:hover{
+    transform: scale(1.1);
+    background-color: var(--Blue_900);
+    color: white;
+}
+:global(body.darkMode) .borders > .link:hover{
+    background-color: var(--Grey_950);
+}
+:global(body.darkMode) .container_back,:global(body.darkMode) .borders > .link {
+    color: var(--White);
+    background-color: var(--Blue_900);
+}
+:global(body.darkMode) .container{
+    color: var(--White);
+}
+.sec_div{
+    width: 100%;
+    margin: auto;
+    max-width: 500px;
+}
+@media (min-width: 768px){
+    .container{
+      width: 89%;
+     margin-top: 3.3em;
+     gap: 5em;
+    }
+    .container_back{
+    gap: 0.6em;
+    padding: 0.5em 1.5em;
+    padding-left: 2em;
+    max-width: 132px;
+    }
+    .container_back span{
+        font-size: 1em;
+    }
+    .about h2{
+    font-size: 2em;
+    }
+    .about{
+    margin-top: 2.5em;
+    gap: 2em;
+    } 
+    .sec{
+        margin-top:2.9em;
+    }
+    .containerItem img{
+        height: 360px;
+    }
+
+}
+@media (min-width: 1224px){
+    .container{
+    margin-top: 5em;
+    gap: 5em;
+    }
+    .containerItem{
+        flex-direction: row;
+        gap: 4em;
+    }
+    .sec_div{
+        max-width: none;
+    }
+    .containerItem img{
+        height: auto;
+        max-width: 510px;
+    }
+    .divContainer  p{
+    font-size: 1em;
+    
+}
+.teste{
+    gap: 0em ;
+}
+}
+@media (min-width: 1400px) {
+     .containerItem{
+        gap: 8em;
+    }
+}
+@media (min-width:1550px){
+    .container{
+        width: 80%;
+    }
+}
+
+@media (min-width:1800px){
+  .container{
+        width: 70%;
+    }
+    .divContainer span{
+        font-size: 1.1em;
+    }
+}

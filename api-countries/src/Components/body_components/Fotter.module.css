@@ -1,0 +1,21 @@
+.rodape{
+    background-color: var(--Grey_400);
+    font-weight: 600;
+    font-size: 0.9em;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 3em;
+    padding: 0.8em;
+}
+:global(body.darkMode) .rodape{
+    background-color: var(--Blue_900);
+    color: var(--White);
+}
+:global(body.darkMode) .rodape a{
+    color: var(--Grey_50);
+}
+.rodape a{
+    text-decoration: none;
+    color: var(--Blue_950);
+}

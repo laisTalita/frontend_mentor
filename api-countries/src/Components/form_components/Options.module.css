@@ -1,0 +1,45 @@
+
+.wrapper {
+  position: relative;
+  width: 200px;
+}
+.select {
+  width: 100%;
+  border: none;
+  padding: 1.4em 1.9em;
+  border-radius: 5px;
+  background-color: var(--White);
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  font-size: 0.76em;
+  appearance: none;
+  letter-spacing: 0.06em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--Grey_950);
+}
+
+:global(body.darkMode) .select {
+  background-color: var(--Blue_900);
+  color: var(--White);
+}
+
+:global(body.darkMode) .icon {
+  color: var(--White);
+}
+
+@media (min-width: 576px) {
+  .select {
+  
+  font-size: 0.9em;
+    padding: 1.1em 1.9em;
+}
+}

@@ -1,0 +1,30 @@
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.6em;
+    padding: 1em 2em;
+    border-radius: 5px;
+    background-color: var(--White);
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.073);
+    color: var(--Grey_400);
+}
+:global(body.darkMode) .search, :global(body.darkMode) input{
+    background-color: var(--Blue_900);
+    color: var(--White);
+}
+input{
+    border: none;
+    color: var(--Grey_400);
+    font-size: 0.7em;
+    letter-spacing: 0.04em;
+    width: 100%;
+}
+@media (min-width: 576px){
+    .search{
+        max-width: 500px;
+    }
+    input{
+        font-size: 0.9em;
+    }
+}
