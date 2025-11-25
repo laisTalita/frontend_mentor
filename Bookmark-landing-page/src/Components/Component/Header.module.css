@@ -1,0 +1,104 @@
+header{
+    position: relative;
+}
+nav{
+    width: 89%;
+    padding: 2.2em 0em !important;
+}
+.change{
+    background-color: var(--Blue_950) !important;
+    opacity: 0.97;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.lista{
+    margin-top: 2.2em;
+}
+.lista li:last-child {
+    border-bottom:none;
+}
+li{
+    border-top: 2px solid rgba(255, 255, 255, 0.108);
+    padding: 1.07em 0em;
+}
+a{
+    color: white !important;
+    text-decoration: none;
+}
+a,.bot_nav{
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 1.29em !important;
+}
+.bot_nav{
+    background-color: transparent;
+    border: 2px solid white !important;
+    border-radius: 5px;
+    box-shadow: none !important;
+    font-weight: 500;
+    padding: 0.2em ;
+    margin-top: 1.2em;
+}
+
+.icons_nav{
+    bottom: 3.2em;
+    gap: 2.5em;
+}
+.icons_nav img{
+    width: 23px;
+}    
+nav .div_container{
+    max-width: none !important;
+    width: 100% !important;
+}
+
+@media (min-width: 768px) {
+    .lista li a{
+        color: rgb(0, 0, 0) !important;
+        font-size: 0.8em !important;
+    }
+    .lista li a:hover{
+        color: var(--Red_400) !important;
+    }
+    .bot_nav{
+        background-color: var(--Red_400) !important;
+        padding: 0.5em 0em !important;
+        font-size: 1em  !important;
+        width: 118px !important;
+    }
+    .bot_nav:hover{
+        border: 1px solid var(--Red_400) !important;
+        color: var(--Red_400) !important;
+        background-color: transparent !important;
+    }
+    li{
+        border:none;
+        padding: 0em !important;
+    }
+    nav{
+        width: 90%;
+        padding: 2em 0em !important;
+        }
+    .lista{
+        margin: 1em 0em;
+        }
+}
+@media(min-width: 992px){
+    nav{
+        width:76%;
+        padding: 2.3em 0em 1em 0em !important;
+    }
+    .lista{
+        margin: 0em;
+        padding-top:0.5em;
+    }
+    nav .container{
+    max-width: none !important;
+    padding: 0% !important;
+}
+}   
+

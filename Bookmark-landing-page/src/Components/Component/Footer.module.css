@@ -1,0 +1,31 @@
+.footerSec{
+    background-color: var(--Blue_950);
+}
+.footerSec a {
+    font-size: 0.9em !important;
+}
+.footerSec li{
+    border: none !important;
+}
+.container_icon_footer{
+    max-width: 100px;
+}
+.footerSec hr{
+    border: 0 !important;
+    color: white;
+    width: 100%;
+    border-top: 1px solid #ccc !important;
+    opacity: 1 !important;
+}
+.footerSec p{
+    font-size: 0.9em ;
+    color: white;
+}
+.container_icon_footer img:hover {
+    transform: rotate(-10deg) scale(1.2);
+    cursor: pointer;
+    filter: brightness(0) invert(1) brightness(0) saturate(100%) invert(69%) sepia(56%) saturate(749%) hue-rotate(182deg) brightness(100%) contrast(92%);
+}
+.footerSec  a:hover{
+    color: rgb(87, 157, 249) !important;
+}

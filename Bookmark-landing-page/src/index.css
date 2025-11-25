@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+:root{
+--Blue_600: hsl(231, 69%, 60%);
+--Red_400: hsl(0, 94%, 66%);
+--Grey_50: hsl(0, 0%, 97%);
+--Blue_950: hsl(229, 31%, 21%);
+--Font: 'Rubik', sans-serif;
+}
+*{
+  padding: 0%;
+  margin: 0%;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: var(--Font);
+  font-weight: 400;
+  color: var(--Blue_950);
+  overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+main{
+  width: 94%;
+}
+p{
+  color:var(--Blue_950);
+  opacity: 0.4;
+}
+h2{
+  font-size: 1.5em;
+  line-height: 1.2em;
+
+}
+.btn-primary{
+  background-color:var(--Blue_600);
+  color: white;
+}
+.btn-primary:hover{
+    border: 1px solid var(--Blue_600) !important;
+    color: var(--Blue_600);
+    background-color: transparent;
+}
+p{
+    font-size: 0.95em;
+    line-height: 1.66em;
+}
+button{
+  padding: 0.9em 1.2em !important;
+  border: 1px solid transparent !important;
+  background-color: var(--Grey_50);
+  color: var(--Blue_950);
+  box-shadow: 1px 4px 4px 1px hsla(231, 69%, 60%, 0.193);
+  border-radius: 5px !important;
+  font-size: 0.9em !important;
+  transition: 0.4s ease;
+}
+@media (min-width: 768px) {
+  p{
+    font-size: 1em;
+  }
+}
+@media (min-width:992px){
+  button{
+  padding: 0.9em 1.8em !important;
+
+}main{
+          width: 76%;
+
+}
+}
+ @media(min-width:1200px){
+  h2{
+        font-size: 2em;
+    }
+  
+}
