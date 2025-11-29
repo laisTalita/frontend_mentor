@@ -14,40 +14,38 @@ body,html{
 body{
     background: black url("../imagens/nasa.jpeg") no-repeat fixed ;
     background-size: cover;
-    background-position: center top;
+    background-position:  top;
     height: 100vh;
     color: white;
     display: flex;
     flex-direction: column;
 }
 main{
-    background-color: rgba(0, 0, 0, 0.414);
+    background-color: rgba(0, 0, 0, 0.481);
     flex: 1;
     display: flex;
     align-items: center; 
     justify-content: center; 
 }
 header{
-    height: 43px;
-    background-color:rgba(0, 0, 0, 0.414);
-}
-header p{
-    padding: 5px;
-    margin: 15px;
-}
-header div{
-    margin: auto;
-    width: 90%;
+    height: 20px;
+    background-color:rgba(0, 0, 0, 0.325);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.108);
+    padding: 2em 3em;
 }
  p ,h1,a { 
     font-family: var(--var2);
     font-size: 1.3em 
  }
+
+
+
+ 
 #info1{
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.846);
     display: none;
-    padding: 8px;
+    padding: 1em 2em;
     overflow: auto; 
     width: 80%;
     border: 0.2px solid rgba(172, 104, 9, 0.209) ;
@@ -55,17 +53,18 @@ header div{
 #info2{ 
     backdrop-filter: blur(10px);
    -webkit-backdrop-filter: blur(10px); 
-    background-color: rgba(155, 155, 165, 0.011);
-    border: 3px solid rgba(255, 255, 255, 0.174);
-    border-radius: 20px;
-    padding: 20px;
+    background-color: rgba(155, 155, 165, 0.015);
+    border-top: 2px solid rgba(255, 255, 255, 0.155);
+    border-right: 1px solid rgba(255, 255, 255, 0.099);
+    border-radius: 20px 0px 20px;
+    padding: 1.5em 2em;
     margin: 0 auto;
     width: 70%;
-    min-width: 300px;
+    max-width: 500px;
     text-align: center;
 }
 #info2 h1{
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     font-size: 1.4em;
     margin: 1em;
     text-shadow: 2px -2px 6px rgba(0, 0, 0, 0.32);
@@ -89,12 +88,13 @@ header div{
 }
 .b1{
     font-size: 1.2em;
-    padding: 5px;
-    margin: 4% 4%;   
+    padding: 0.5em;
+    margin: 1em;   
+    margin-top: 2em;
 }
 input[type = date]{
     background-color: transparent;
-    color: white;
+    color: rgba(219, 154, 154, 0.824);
     margin-right: 3px;
     padding: 6px;
     font-size: 1.2em;
@@ -109,7 +109,7 @@ input[type = date],button{
 button{
     letter-spacing: 0.1em;
     cursor: pointer;
-    padding: 1px;
+    padding: 0.5em;
     color: white;
     width: 17%;
     min-width: 160px;
@@ -141,12 +141,7 @@ footer p{
     font-size: 1em;
  }
  #info2 h1{
-    font-size: 1.2em;
+    font-size: 1.3em;
  }
- #info{
-    margin: 20% auto;
- }
- #info2{
-    margin: 40% auto
- }
+
 }
