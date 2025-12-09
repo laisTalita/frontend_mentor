@@ -1,0 +1,63 @@
+.createTask input{
+    width: 100%;
+    padding: 1.4em 0em;
+    border-radius: 5px;
+    padding-left: 3.9em ;
+    border: none;
+    font-size: 0.7em;
+    letter-spacing: -0.02em;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    color: var(--Gray_600);
+    font-weight:700 ;
+    background-color: white;
+}
+:global(body.dark) .createTask input {
+  background-color: var(--Navy_900);
+  color: var(--Gray_600) ;
+}
+.createTask{
+    position: relative;
+    width: 100%;
+}
+.createTaskCircle {
+  position: absolute;
+  left: 1.1em;
+  top: 30%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid var(--Gray_300); 
+}
+:global(body.dark) .createTaskCircle{
+    border: 1px solid var(--Purple_800); 
+
+}
+@media (min-width: 576px) {
+ .createTask input{
+    font-size: 0.9em;
+    padding-left: 3.5em ;
+}
+.createTaskCircle {
+  left: 1em;
+  top: 34%;
+  width: 21px;
+  height: 21px;
+}
+}
+@media (min-width: 768px) {
+  .createTask input{
+    font-size: 0.96em;
+    margin-top: 3px ;
+}
+}
+@media (min-width: 992px) {
+   .createTask input{
+    padding-left: 4.1em ;
+}
+.createTaskCircle {
+    left: 1.3em;
+    width: 23px;
+    height: 23px;
+}
+}

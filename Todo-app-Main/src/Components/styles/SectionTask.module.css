@@ -1,0 +1,57 @@
+.textTaks{
+    background-color: transparent;
+    border: none;
+}
+.textTaks p::first-letter{
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+.sectionTasks{
+    display: flex;
+    background-color: white;
+    box-shadow: 1px 1px 20px 0px hsla(234, 39%, 85%, 0.501);
+    border-radius: 5px;
+    padding: 0.9em 0em ;
+    gap: 1.3em;
+    align-items: center;
+    justify-content: center;
+}
+:global(body.dark) .sectionTasks{
+    background-color: var(--Navy_900);
+    box-shadow: none;
+
+}
+.textTaks p{
+    color: hsl(240, 6%, 51%) !important;
+    cursor: pointer;
+}
+.textTaks p:hover{
+    color: var(--Navy_850) !important;
+}
+:global(body.dark) .textTaks p:hover{
+    color:var(--Purple_300) !important;
+
+}
+:global(body.dark) .textTaks p{
+    color:var(--Purple_600) !important;
+}
+:global(body.dark) .active p{
+    color: var(--Blue_500) !important;
+}
+.active p{
+    color: var(--Blue_500) !important;
+}
+
+@media(min-width: 768px){
+    .sectionTasks{
+    background-color: transparent !important;
+    box-shadow: none;
+    border-radius: none !important;
+    padding: 0% ;
+    gap: 1em !important;
+    margin-left: 1.2em ;
+}
+.textTaks p{
+    font-size: 1em !important;
+}
+}

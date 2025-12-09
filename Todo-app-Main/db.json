@@ -1,0 +1,14 @@
+{
+  "all": [
+    {
+      "id": "ce4e",
+      "text": "complete todo app on frontendMentor",
+      "completed": false
+    },
+    {
+      "id": "0f18",
+      "text": "pick up groceries",
+      "completed": false
+    }
+  ]
+}

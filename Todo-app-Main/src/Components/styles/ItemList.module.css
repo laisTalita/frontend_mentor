@@ -1,0 +1,135 @@
+.itemList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6em  1.1em ;
+}
+.itemSec{
+ padding: 0.3em ;
+ padding-left: 0em ;
+ width: 90%;
+display: flex;
+align-items: center;
+gap: 0.5em;
+overflow: hidden;
+}
+.itemSec .itemP{
+    font-weight: 400 !important;
+    color: var(--Navy_850);
+    font-size: 0.84em;
+    cursor: pointer;
+}
+:global(body.dark) .itemP{
+    color: var(--Gray_600);
+}
+.containerText{
+    width: 80%;
+    overflow-x: auto;
+}
+.itemSec input[type="checkbox"]{
+    display: none;
+}
+.itemSec .itemP::first-letter{
+    text-transform: uppercase;
+}
+.customCheck {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid var(--Gray_300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+:global(body.dark) .customCheck{
+    border: 1px solid var(--Purple_800); 
+}
+.customCheck:hover{
+    border-color: var(--Check_Background);
+    border: 1px solid transparent; 
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    background-image: linear-gradient(var(--bg-color, #fff), var(--bg-color, #fff)), var(--Check_Background);
+}
+:global(body.dark) .customCheck:hover{
+    background-image: linear-gradient(var(--bg-color, var(--Navy_900)), var(--bg-color, var(--Navy_900))), var(--Check_Background);
+}
+.itemSec input[type="checkbox"]:checked + .customCheck{
+    background: var(--Check_Background);
+    border: none;
+}
+.itemCheck{
+    width: 19px;
+    height: 19px;
+}
+.itemSec input[type="checkbox"]:checked + .customCheck::after{
+    content: "";
+    margin-top: 2px;
+    width: 9px;        
+    height: 9px;
+    background-image: url("../../../public/images/icon-check.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.itemList button{
+    border: none;
+    background-color: transparent;
+}
+.itemList button img{
+    width: 12px;
+}
+.itemContainer hr{
+    color: var(--Purple_300);
+    opacity: 0.3;
+}
+:global(body.dark) .itemContainer hr{
+    color: var(--Purple_600);
+}
+.completed{
+    text-decoration: line-through !important;
+    color: var(--Gray_300) !important;
+}
+:global(body.dark) .completed{
+    color: var(--Purple_700) !important;
+}
+.removeItem{
+    cursor: pointer;
+}
+@media (min-width: 576px) {
+    .itemSec{
+        gap: 0.7em;
+    }
+    .itemCheck{
+    width: 22px;
+    height: 22px;
+}
+}
+@media (min-width:768px) {
+    .removeItem{
+        display: none;
+    }
+    .itemList{
+    padding: 0.8em  1em ;
+}
+    .itemList:hover .removeItem{
+        display: block;
+    }
+       .itemSec{
+        gap: 0.9em;
+    }
+    .itemSec .itemP{
+    font-size: 1em;
+}
+}
+@media (min-width:992px) {
+    .itemSec{
+        gap: 1.3em;
+        padding-left: 0.3em ;
+    }
+    .itemCheck{
+    width: 23px;
+    height: 23px;
+}
+}
