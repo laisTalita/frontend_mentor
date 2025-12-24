@@ -1,0 +1,77 @@
+.containerLabel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0.8em;
+    border-radius: 10px;
+    border: 1px solid var(--Grey_500);
+    cursor: pointer;
+}
+.containerLabel:hover{
+    border: 1px solid var(--Purple_600);
+}
+.containerdivlabel div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+.containerdivlabel h2{
+    font-size: 1.12em;
+}
+.containerdivlabel P{
+    font-size: 0.9em;
+}
+
+.containerdivlabel{
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+.containerLabel span{
+    color: var(--Purple_600);
+}
+.activoState{
+    border: 1px solid var(--Purple_600);
+    background-color: var(--Blue_50);
+}
+.checkbox_input{
+    display: none;
+}
+.checkmark{
+    position: relative;
+    height: 19px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: var(--White);
+    border: 1px solid var(--Grey_500);
+}
+.checkbox_input:checked + .checkmark {
+  background-color: var(--Purple_600);
+      border: 1px solid var(--Purple_600);
+
+  
+}
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  background-image: url("../../../public/assets/images/icon-checkmark.svg");
+  background-position:center;
+  height: 90%;
+  background-repeat: no-repeat;
+}
+
+.checkbox_input:checked + .checkmark::after {
+  display: block;
+}
+
+@media (min-width: 768px) {
+    
+.containerdivlabel div{
+    max-width: none !important;
+}
+}
