@@ -1,15 +1,13 @@
-// pega as tasks do localStorage ou inicializa como array vazio
+
 function getTasks() {
   const saved = localStorage.getItem("tasks");
   return saved ? JSON.parse(saved) : [];
 }
 
-// salva as tasks no localStorage
 function saveTasks(tasks) {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
-// cria uma nova tarefa
 export async function Create(obj) {
   try {
     const tasks = getTasks();
@@ -22,7 +20,6 @@ export async function Create(obj) {
   }
 }
 
-// lista todas as tarefas
 export async function ListAll() {
   try {
     return getTasks();
@@ -32,7 +29,6 @@ export async function ListAll() {
   }
 }
 
-// deleta uma tarefa pelo id
 export async function DeleteTask(id) {
   try {
     let tasks = getTasks();
@@ -43,7 +39,6 @@ export async function DeleteTask(id) {
   }
 }
 
-// marca ou desmarca uma tarefa como completa
 export async function CompleteTask(id, value) {
   try {
     let tasks = getTasks();
@@ -55,7 +50,6 @@ export async function CompleteTask(id, value) {
   }
 }
 
-// deleta todas as tarefas completadas
 export async function DeleteAll() {
   try {
     let tasks = getTasks();
